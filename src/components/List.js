@@ -15,7 +15,8 @@ function List(){
     }, [characters.length]);  
     return(
         <div> 
-            <h2>Family</h2>
+            <h2>Characters</h2>
+            <div className= 'row'>
             {loading ? (
                 <div>Loading...</div>
             ):(
@@ -28,6 +29,7 @@ function List(){
                         />
                 ))
             )}
+            </div> 
         </div>
     );
 }
